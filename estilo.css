@@ -1,0 +1,107 @@
+           h1 {
+               color: #02002c;
+               font-size: 42px;
+               font-family: 'Lobster', cursive;
+           }
+
+           .produto {
+               color: #010019;
+               font-size: 32px;
+               background: #3f9149;
+               box-shadow: 0 0 15px #010019;
+               border-radius: 26px;
+           }
+
+           /* #cafe {
+            color: black;
+            text-align: right;
+            font-size: 18px;
+        }*/
+
+           h2 {
+               font-family: 'Imbue', serif;
+               text-align: center;
+               color: beige;
+           }
+
+           h3 {
+               font-family: 'Imbue', serif;
+               text-align: center;
+               font-size: 19px;
+           }
+
+           h4 {
+               font-family: 'Imbue', serif;
+               text-align: left;
+               font-size: 19px;
+           }
+
+           div {
+               margin: 2px;
+               border: 2px;
+               padding: 15px;
+               font-family: 'Raleway', sans-serif;
+               font-size: 20px;
+
+           }
+
+           #apresentacao {
+               margin: 24px;
+               border: 5px solid #02002c;
+               padding: 26px;
+               border-top-left-radius: 26px;
+               border-bottom-right-radius: 26px;
+               background-color: rgba(135, 159, 0, 0.35);
+           }
+
+           .menu {
+               padding: 10px;
+               padding-right: 15px;
+               padding-left: 15px;
+               display: inline;
+               border-right: 6px solid #4c814c;
+               border-left: 6px solid #4c814c;
+               border-radius: 100px;
+           }
+
+           p {
+               color: black;
+               text-align: left;
+               font-size: 19px;
+           }
+
+           ul {
+               color: #010019;
+               text-align: left;
+               font-size: 18px;
+           }
+
+           /*img {
+            width: 1500px;
+            height: 1500px;
+        }*/
+
+           .fundo {
+               position: fixed;
+               z-index: -1;
+               transform: translate(-50%, -50%);
+               opacity: 0.8;
+           }
+
+           button {
+               font-size: 20px;
+               color: #001503;
+               background-color: #50b930;
+           }
+
+           #logo {
+               position: center;
+               width: 100px;
+               height: 100px;
+           }
+
+           .centro {
+               color: #02002c;
+               text-align: center;
+               font-size: 22px;
+           }

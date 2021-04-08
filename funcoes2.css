@@ -1,4 +1,4 @@
-        h1 {
+             h1 {
             color: #02002c;
             font-size: 42px;
             font-family: 'Lobster', cursive;
@@ -6,10 +6,12 @@
 
         .produto {
             color: #010019;
-            font-size: 32px;
+            font-size: 40px;
             background: #3f9149;
             box-shadow: 0 0 15px #010019;
             border-radius: 26px;
+            font-family: 'Imbue', serif;
+
         }
 
         /* #cafe {
@@ -18,22 +20,27 @@
             font-size: 18px;
         }*/
 
-        h2 {
+        /* h2 {
             font-family: 'Imbue', serif;
             text-align: center;
             color: beige;
-        }
+            font-size: 30px;
+        }*/
 
         h3 {
-            font-family: 'Imbue', serif;
+            font-family: 'ABeeZee', sans-serif;
             text-align: center;
-            font-size: 19px;
+            font-size: 22px;
+            color: #003e00;
+            background-color: rgba(169, 169, 169, 0.25);
+            border-radius: 26px;
         }
 
         h4 {
             font-family: 'Imbue', serif;
             text-align: left;
-            font-size: 19px;
+            font-size: 40px;
+            color: #003e00;
         }
 
         div {
@@ -67,6 +74,7 @@
             color: black;
             text-align: left;
             font-size: 19px;
+            font-family: 'Roboto', sans-serif;
         }
 
         ul {
@@ -75,10 +83,10 @@
             font-size: 18px;
         }
 
-        /*img {
-            width: 1500px;
-            height: 1500px;
-        }*/
+        .img {
+            width: 700px;
+            height: 300px;
+        }
 
         .fundo {
             position: fixed;
@@ -103,4 +111,32 @@
             color: #02002c;
             text-align: center;
             font-size: 22px;
+        }
+
+        .ex {
+            position: center;
+            width: 350px;
+            height: 350px;
+        }
+
+        .espaco {
+
+            margin: 24px;
+            border: 5px;
+        }
+
+        .obs {
+            color: #010019;
+            font-size: 40px;
+            background: rgba(90, 185, 101, 0.62);
+            box-shadow: 0 0 15px black;
+            border-radius: 26px;
+            font-family: 'Imbue', serif;
+
+        }
+
+        .v {
+            position: center;
+            width: 250px;
+            height: 200px;
         }

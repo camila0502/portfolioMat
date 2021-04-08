@@ -24,7 +24,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Imbue:wght@300&family=Indie+Flower&family=Lobster&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
     </style>
 </head>
 
@@ -65,14 +65,297 @@
         <div class="container bg-white text-blue">
             <div>
                 <img class="fundo" src="quadro-negro.jpg" />
+                <h2 class=produto> Progressão Aritmetica e Progressão Geometrica </h2>
+                <br />
 
-                <h2 class=produto> Progressão Aritmetica </h2>
-                <p class="centro">
+                <h3> Sequência </h3>
+
+
+                <p> Antes de saber a definição de progressão aritmetica é necessario entender como funciona uma sequeência.</p>
+                <p> Sequências numericas é uma sucessão de numeros com uma ordem/padrão especifico entre eles, que associa cada elemento <i>n </i>∈ ℕ∗ em um unico elemento an ∈ ℕ. </p>
+                <p class="centro"> f: ℕ∗ → ℝ </p>
+                <p> ℕ∗ → posição dos termos da sequencia </p>
+
+                <br />
+                <br />
+                <h4>Exemplo:</h4>
+                <p><b> a) </b> 0, 2, 4, 6, 8... </p>
+                <p> ---> A sequência acima apresenta um padrão de numeros pares, ou seja, soma-se 2 tendo iniciado em 0.</p>
+                <br />
+                <p><b> b) </b> 1, 3, 5, 7, 9... </p>
+                <p> ---> A sequência acima apresenta um padrão de numeros impares, ou seja, soma-se 2 tendo iniciado em 1.</p>
+                <br />
+                <p><b> c) </b> 2, 4, 8, 16, 32... </p>
+                <p> ---> A sequência acima apresenta um padrão de numeros que iniciou com expoente 1 e seguiu com a potencia de 2</p>
+                <br />
+                <ul type="square">
+                    <il>
+                        <h4> <b> Lei da formação</b> </h4>
+                    </il>
+                    <p> No quesito matematico, o que interressa nas sequencias são aquelas que são possiveis estabelecer leis de formação. Para fazermos isso, utiliza-se 3 formas: </p>
+                    <h4> Fórmulas de recorrência </h4>
+                    <p> Deve-se utilizar de duas regras:</p>
+                    <p> 1° - identificar o primeiro termo = A1 </p>
+                    <p> 2° - calcular cada termo (An) a partir do seu antecedente (A n-1) </p>
+                    <br />
+
+                    <h4> Exemplos: </h4>
+                    <br />
+                    <p><b> a) </b> Escreva os 10 primeiros termos da sequencia definida por: </p>
+                    <p> A1 = 2 || An = An-1 + 3, n >= 1</p>
+                    <p><b> Resposta: </b>2, 5, 8, 11, 14... </p>
+                    <br />
+
+                    <p><b> b) </b> Crie uma formula de recorrencia a partir do termo: </p>
+                    <p> --> 2, 5, 8, 11, 14... </p>
+                    <p> <b>Resposta: </b>A1 = 2 || An = An-1 + 3 </p>
+                    <br />
+                    <p> --> 1, 3, 5, 7, 9... </p>
+                    <p> <b>Resposta: </b>A1 = 1 || An = An-1 + 2 </p>
+                    <br />
+                    <p> --> 2, 4, 8, 16, 32... </p>
+                    <p> <b>Resposta: </b>A1 = 2 || An = 2An-1</p>
+                    <br />
+
+                    <il>
+                        <h4><b> Expressando cada termo em função da suaposição n </b> </h4>
+                    </il>
+                    <p> Quando se usa uma fórmula chamada de <b> Termo Geral</b>, que consiste em expressar o valor de A<i>n</i> em função de <i>n</i>. </p>
+                    <h4> Exemplos: </h4>
+                    <br />
+                    <p><b> a) </b> Escreva os 5 primeiros de uma sequencia infinita, cujo termo geral é dado por 3n +1, em que por <i>n</i> ∈ ℕ∗: </p>
+                    <br />
+                    <p> n=1 → a1 = 4</p>
+                    <p> n=2 → a1 = 7</p>
+                    <p> n=3 → a1 = 10</p>
+                    <p> n=4 → a1 = 13</p>
+                    <p> n=5 → a1 = 16 </p>
+                    <p><b> Resposta: </b>(4, 7, 10, 13, 16, ...) </p>
+                    <br />
+
+                    <p><b> b) </b> Estabeleça o termo geral, para n>=1: </p>
+                    <p> --> 0, 2, 4, 6, 8, 10... </p>
+                    <p> <b>Resposta: </b>An= 2n-2 </p>
+                    <br />
+                    <p> --> 1, 3, 5, 7, 9... </p>
+                    <p> <b>Resposta: </b> An = 2n-1 </p>
+                    <br />
+                    <p> --> 2, 4, 8, 16, 32... </p>
+                    <p> <b>Resposta: </b>An = 2"</p>
+                    <br />
+
+
+                    <il>
+                        <h4><b> Por propriedade dos termos </b> </h4>
+                    </il>
+                    <p> Quando é apresentada a propriedade dos termos de uma sequencia. </p>
+                    <h4> Exemplo: </h4>
+                    <br />
+                    <p><b> a) </b> Escreva os 10 primeiros de uma sequencia infinitaformada pelos numeros primos positivos em ordem crescente. </p>
+                    <br />
+                    <p><b> Resposta: </b>(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, ...) </p>
+                    <br />
+
+                </ul>
+
+
+                <h2 class=produto> Progressão Aritmética </h2>
+
+                <br />
                 <p class="centro"><b>Conceito:</b></p>
+
+                <p>
+                    A progressão Aritmetica (PA) é uma sequencia numerica em que cada numero é definido pelo resultado do valor anterior somado com uma constante denonimidada em <i>r</i>. Resultando na mesma sempre sendo a diferença entre os valores da sequência </p>
+
+                <img class="img" src="sequenciapa.png" />
+                <br />
+                <br />
+                <h3> Fórmula do termo Geral </h3>
+                <p> Para que seja poossivel encontrar um determinado termo dentro da razão de PA, se estipulou uma fórmula seguindo a lógica da que a posição desejada sempre será o primeiro valor somado com a constante de seu anterior </p>
+                <br />
+                <img class="ex" src="formulaPA.png">
+                <br />
+                <p></p>
+                <br />
+                <div class="obs">
+                    <p> <b><u> Observação:</u></b></p>
+                    <p> o Podem aparecer o primeiro termo representado por A0, pois naquele momento é mais conveniente.</p>
+                </div>
+                <br />
+                <h3>Relação entre PA e as funções Afim </h3>
+                <br />
+                <p></p>
+                <p>Toda sequência é definido como função, e a a sequeência da progressão aritmetica é semelhante ao crescimento linear de uma Função Afim </p>
+                <p> Se considerarmos a PA, é possivel estabelecer uma relação gráfica dos pontos de n (posição dos termos) e An(termos), em que n fica no eixo x e An no eixo y. </p>
+                <p> Para estabelecer essa conexão podemos usar a fórmula do termo geral, para assi estabelecer uma relação entre a posição dos temos e a sua posição </p>
+                <h4> Exemplo: </h4>
+                <p> PA: (1, 1), (2, 3), (3, 5), (4, 7), (5, 9), …</p>
+                <br />
+                <img class="ex" src="graficopa.png">
+                <br />
+                <br />
+                <br />
+                <div class="obs">
+                    <p> <b><u> Observação:</u></b></p>
+                    <p> O gráfico desta PA não pode ser uma reta, uma vez que seu dominio constitiu apenas os numeros reais, sem o zero, fazendo com que o mesmo tenha apenas pontos alinhados</p>
+                </div>
+                <br />
+                <h3>Interpolação aritmética</h3>
+                <br />
+                <p>
+                    Nas sequências finitas o primeiro e o ultimo termo são chamados de <b> extremos </b> e os restante é denominado como <b>meio</b>.</p>
+                <p>
+                    Interpolar significa obter uma PA de externos a e b com n= k + 2 termos, ou seja, descobrir os valores do meio entre os termos extremos.
+
+                </p>
+                <br />
+                <h4> Exemplo: </h4>
+                <p><b>a) </b> Interole 5 meios aritmeticos entre 10 e 220</p>
+                <p> n = k +2 = 7</p>
+                <p> An = 220 </p>
+                <p> A1 = 10</p>
+                <p> r = ? </p>
+
+                <br />
+
+                <div class="centro">
+                    <p>An = A1 + (n-1)*<i>r</i></p>
+                    <p>220 = 10 + (7-1)*<i>r</i></p>
+                    <p>220 - 10 = 6*<i>r</i></p>
+                    <p><i>r</i>= 210/6</p>
+                    <p><i>r</i> = 35</p>
+                    <br />
+                    <p><b>PA = (10, 45, 80, 115, 185, 220)</b></p>
+                </div>
+
+                <h3> Soma dos termos de uma PA finita </h3>
+                <br />
+                <p>Ao termos uma PA finita é possivel usarmos uma fórmula pra somar todos os termos da mesma sem precisa realemente soma-los.</p>
+
+                <br />
+                <img class="ex" src="termosfinitosPA.png">
+                <br />
+
+                <h4> Exemplo </h4>
+                <p><b>a) </b> Calcule a soma dos 25 termos iniciais da PA (1, 7, 13,...) </p>
+                <br />
+                <p> n = k + 2 = 6</p>
+                <p> A25 = ? </p>
+                <p> A1 = 1</p>
+                <p> r = ? </p>
+
+                <br />
+
+                <div class="centro">
+                    <p>An = A1 + (n-1)*<i>r</i></p>
+                    <p>A25 = 1 + (25-1)*6 </p>
+                    <p>A25 = 1 + 24 * 6</p>
+                    <p>A25 = 145 </p>
+                    <br />
+                    <p><b>Agora usamos que obtemos o valor extremo usamos na fórmula: </b></p>
+                    <p> Sn = ((A1 + An)*<i>n</i>/2</p>
+                    <p> S25 = ((1 + 145)*25/2</p>
+                    <p> S25 = 1.825 </p>
+                </div>
+
+
+                <h2 class="produto"> Progressão Geométrica </h2>
+
+
+                <p class="centro"><b>Conceito:</b></p>
+
+                <p>
+                    A progressão Aritmetica (PA) é uma sequencia numerica em que cada numero é definido pelo resultado do valor anterior multiplicado por uma constante denonimidada em <i>q</i>. </p>
+
+                <img class="img" src="sequenciapg.png" />
+                <br />
+
+                <h3> Fórmula do termo Geral </h3>
+                <br />
+                <p> Para que seja poossivel encontrar um determinado termo dentro da razão de PG, se estipulou uma fórmula seguindo a lógica da que a posição desejada sempre será o primeiro valor multiplicado pela constante send elevado ao termo anterior </p>
+                <br />
+                <img class="ex" src="formulageralPG.png">
+                <br />
+                <div class="obs">
+                    <p> <b><u> Observação:</u></b></p>
+                    <p> o Podem aparecer o primeiro termo representado por A0, pois naquele momento é mais conveniente.</p>
+                </div>
+                <br />
+                <br />
+                <h3>Relação entre PG e as funções Exponenciais </h3>
+                <br />
+                <p> Se pensarmos em uma PG como uma função exponencial, é possivel associar os numeros naturais positivos (n) a um numero real dado pela expressão: An = A1 * q^n-1 </p>
+                <br />
+                <img class="ex" src="graficoPG.png">
+                <br />
+                <p></p>
+                <br />
+                <div class="obs">
+                    <p> <b><u> Observação:</u></b></p>
+                    <p> O gráfico desta função não pode ser uma curva exponencial, uma vez que seu dominio constitiu apenas os numeros reais, sem o zero, fazendo com que o mesmo tenha apenas pontos alinhados</p>
+                </div>
+                <br />
+
+                <h3>Interpolação geométrica</h3>
+                <br />
+                <p>
+                    <b> Interpolar </b> significa obter uma PG de externos a e b com n= k + 2 termos, ou seja, descobrir os valores do meio entre os termos extremos. Para encontra-los é necessario descobrir a razão.
+
+                </p>
+                <h4> Exemplo: </h4>
+                <p><b>a) </b> Interole 8 meios aritmeticos entre 5 e 2560</p>
+                <br />
+                <p> n = k + 2 = 10</p>
+                <p> An = 2560 </p>
+                <p> A1 = 5 </p>
+                <p> r = ? </p>
+
+                <br />
+
+                <div class="centro">
+                    <p>An = A1*q^<i>n-1</i></p>
+                    <p>2560 = 5q^<i>9</i></p>
+                    <p>q^<i>9</i> = 2560/5 </p>
+                    <p>q^<i>9</i> = 512 </p>
+                    <p>q = 512 ^<i>1/9</i></p>
+                    <p>q=2</p>
+
+                    <br />
+                    <p><b>PG = (5,10, 20, 40, 160, 640, 1280, 2560)</b></p>
+                </div>
+
+                <h3> Soma dos termos de uma PG finita </h3>
+                <br />
+                <p>Ao termos uma PG finita é possivel usarmos uma fórmula pra somar todos os termos da mesma sem precisa realemente soma-los.</p>
+
+                <br />
+                <img class="ex" src="termosfinitosPG.png">
+                <br />
+
+                <h4> Exemplo </h4>
+                <p><b>a) </b> Calcule a soma dos 10 termos iniciais da PG (1, 3, 9, 27, ...) </p>
+                <br />
+                <p> n = k + 2 = 10</p>
+                <p> S10 = ? </p>
+                <p> A1 = 1</p>
+                <p> q = 3 </p>
+
+                <br />
+
+                <div class="centro">
+                    <p>Sn = A1 * ((1-q^n)/(1-q))</p>
+                    <p>S10 = 1 * ((1-3^10)/(1-3))</p>
+                    <p>S10 = 1 * ((1- 59.049)/(-2))</p>
+                    <p>S10 = 1 * ( 59.048/ 2)</p>
+                    <p>S10 = 29.524</p>
+                    <br />
+
+                </div>
+
 
                 <center>
                     <button style="font-size:24px">
-                        <a href="apresentacao.html">
+                        <a href="conteudos.html">
                             Anterior
                         </a>
                         <i class="material-icons">keyboard_return</i>
@@ -87,3 +370,4 @@
             </div>
         </div>
     </center>
+</body></html>

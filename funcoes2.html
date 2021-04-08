@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title> Portfolio </title>
-    <link type="text/css" rel="stylesheet" href="funcoes2.css">
+    <link type="text/css" rel="stylesheet" href="css/funcoes2.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -24,6 +24,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Imbue:wght@300&family=Indie+Flower&family=Lobster&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 
     </style>
 </head>
@@ -54,7 +56,7 @@
     <br />
     <center>
         <h1>
-            <img src="logo-if.jpeg" id="logo" class="img-fluid" />
+            <img src="imagens/logo-if.jpeg" id="logo" class="img-fluid" />
 
             Portfólio de Matemática
         </h1>
@@ -64,10 +66,10 @@
     <center>
         <div class="container bg-white text-blue">
             <div>
-                <img class="fundo" src="quadro-negro.jpg" />
+                <img class="fundo" src="imagens/quadro-negro.jpg" />
 
                 <h2 class=produto> Funções quadraticas </h2>
-                <p class="centro">
+
                 <p class="centro"><b>Conceito:</b></p>
                 <p>
                     Função Quadrática também é pode ser chamada de Função de 2º grau, sendo uma função de ℝ → ℝ definida pela fórmula:
@@ -77,30 +79,187 @@
                     <b> f(x) = ax² + bx + c </b>
                 </p>
                 <p>
-                    Para que uma função seja considerada de segundo grau deve seguir algumas espicificações como:
+                    Porém para a função ser quadrática é necessário que seus coeficientes (a, b e c) sejam reais, com o valor de a diferente de 0, resultando sempre em uma parábola. Além disso, a função possuiu seu domínio em reais e sua imagem dependente da sua concavidade e do seu vértice.
                 </p>
 
+
+                <h4> Exemplo: </h4>
+
+                <p class="centro">
+                    <b> • f(x)= x² – x – 2 </b>
+                </p>
+                <br />
+                <img src="imagens/grafico2.png">
+                <br />
+                <p> – Tem sua concavidade para cima; </p>
+                <p> – 2 pontas de intersecção no eixo x; </p>
+                <p> – 1 ponta de intersecção no eixo y; </p>
+                <p> – Apresenta um ponto mínimo, ou seja, o vértice. </p>
+
+
+                <br />
+                <h3> <b>Valores numéricos em um único ponto: </b></h3>
+                <p>
+                    Nas funções quadráticas nos deparamos com 2 situações:
+                </p>
                 <ul type="square">
-                    <li>
-                        Os coeficientes a, b e c devem ser números reais alem de serem, necessariamente, diferentes de zero.
-                    </li>
-                    <li>
-                        O seu gráfico deve sempre resultar em uma parábola paralelo ao eixo dos y.
-                    </li>
-                    <li>
-                        A imagem resultante irá depender da concavidade e do vértice da parábola.
-                    </li>
-                    <li>
-                        Dado o valor de x, calculamos o valor de y, ou seja, o f(x).
+                    <p>
+                        <il> • Calcular a f(x) dado o valor de x, ou seja, achar o ponto da intersecção do y usando o valor de x.</il>
+                    </p>
 
-                    </li>
+                    <h4>Exemplo: </h4>
+                    <p></p>
+                    <p><u> f (x) = x² – x – 6, usando x como 0, 1, -3, -1/3;</u></p>
+                    <p></p>
+                    <p> -> f(0) = 0² – 0 – 6 = -6 </p>
+                    <p> -> f (1) = 1² – 1 – 6 = -6 </p>
+                    <p>-> f(-3) = (-3)² - (-3) – 6 = 12</p>
+                    <p> -> f (-1/3) = (1/3)² – (1/3) – 6 = -50/9 </p>
 
+                    <br />
+                    <p>
+                        <il> • Calcular o x tendo o valor da f(x) ou y. </il>
+                    </p>
+
+                    <h4>Exemplo: </h4>
+                    <p> <u> f(x) = 6 </u> </p>
+                    <p> x² – x – 6 = 6 ¬> x² – x – 12 =0 </p>
+                    <p> Utiliza-se a fórmula de bhaskara para resolver o restante, encontrando os valores de <u>-3 e 4. </u>
+                    </p>
                 </ul>
 
+                <br />
+
+                <h3><b> Raízes reais ou zero da função: </b></h3>
+                <p> São os valores de x em que f(x) = 0, ou seja, é o ponto de intersecção do eixo x. Para resolver basta zerar o valor de y/f(x). No entanto, existem 4 técnicas para resolver e encontrar as raizes reais, e são elas:
+                </p>
+                <br />
+                <p> 1° - Usando Bháskara:</p>
+                <img class="ex" src="imagens/bhaskara.png">
+                <img class="img" src="imagens/delta.png" />
+
+                <p> 2° - fatorar quando o valor do coeficiente c é igual a zero.</p>
+                <div class="espaco">
+                    <br />
+                    <h4>Exemplo:</h4>
+                    <p><b> f(x) = x² - 4x </b> </p>
+                    <p>x² - 4x = 0 </p>
+                    <p> x(x-4)=0 </p>
+                    <p> x1 = 0 || x2 - 4 = 0 ¬> x2 = 4 </p>
+                </div>
+                <br />
+                <p> 3° - Isolando o x quando o coeficiente b for igual a zero.</p>
+                <br />
+                <div class="espaco">
+                    <br />
+                    <h4>Exemplo:</h4>
+                    <p><b> f(x) = x² - 4 </b> </p>
+                    <p> x² - 4 = 0 </p>
+                    <p> x² = 4 </p>
+                    <p> x = raiz(4) ¬> x = 2 </p>
+                </div>
+                <br />
+                <p> 4° - Pela soma e produto usando calculo mental</p>
+                <p class="centro"><b> x1 + x2 = -b/a </b></p>
+                <p class="centro"><b>x1 * x2 = c/a </b></p>
+
+                <br />
+                <div class="espaco">
+                    <br />
+
+                    <h4>Exemplo:</h4>
+                    <p><b> f(x) = x² - 5x + 6 </b> </p>
+                    <p> x1 + x2 = 5</p>
+                    <p> x1 * x2 = 6 </p>
+                    <p> raizes = 2 e 3 </p>
+                </div>
+                <br />
+
+                <div class="obs">
+                    <p> <b><u> Observação:</u></b></p>
+                    <p> É importante destacar que as funções quadráticas podem ter duas, uma ou nenhuma raiz real e ainda ser uma função quadrática.</p>
+                </div>
+                <br />
+                <h3> <b>Concavidade:</b></h3>
+                <p> Toda função de segundo grau, e para sabermos se essa concavidade é para cima ou para baixo devemos analisar o coeficiente de a.</p>
+                <p> --> Se o coeficiente <b> a </b> for maior que 0, ou seja, se for positivo, a concavidade é para cima.</p>
+                <br />
+                <img src="imagens/parabolaspos.png">
+                <br />
+                <p></p>
+                <p> --> Se o coeficiente <b> a </b> for menor que 0, ou seja, se o valor for negativo a concavidade é para baixo. </p>
+                <br />
+                <img src="imagens/parabolasneg.png">
+                <br />
+
+                <h3> <b> Vertice: </b> </h3>
+                <p> É o que indica o limite na qual a função pode atingir, podendo ser um ponto maximo ou ponto minino. Há duas formas de encontra-lo. </p>
+
+                <p><b> - 1° forma: </b> encontrar as raizes e fazer uma media aritmetica sobre a mesmas. Já o valor de y pode ser encontrado na função dada pelo valor de xv f(xv)= yv. </p>
+                <br />
+
+                <h4> Exemplo:</h4>
+                <p> <b> <u> f(x) = x² – 2x – 15 com as raizes -3 e 5. </u></b></p>
+                <p> xv = (-3 + 5)/2 = 2/2 = 1 </p>
+                <p> yv = 1² – 2 (1) – 15 = -16 </p>
+                <br />
+
+                <p><b> - 2° forma: </b>usando a fórmula: </p>
+
+                <img class="v" src="imagens/vertice.png">
+                <p> Em que o primeiro valor é o x e o segundo é o valor de y. </p>
+                <br />
+                <h4> Exemplo:</h4>
+                <p> <b> <u> f(x) = x² – 2x – 15 com as raizes -3 e 5. </u></b></p>
+                <p> xv = -(-2)/2*1 = 2/2 = 1 </p>
+                <p> yv = -(4 + (-4 * 1 *-15)/ 4*1</p>
+                <p> yv = -(4+60) 4 = -16 </p>
+                <br />
+
+
+                <h3> <b> Construção de gráfico: </b></h3>
+                <p> Para podermos construir gráficos de modo adequado devemos seguir algumas instruções: </p>
+
+                <p> 1 – analisar a concavidade, se o valor de a é positivo ou negativo; </p>
+                <p> 2 – calcular as raízes reais, se existirem (observando o delta você é capaz de descobrir) </p>
+                <p> 3 – determinar o ponto de intersecção com o eixo y. </p>
+                <p> 4 – calcular o vértice. </p>
+
+
+                <h4> Exemplo:</h4>
+                <p><b><u>f(x) = x² – 7x + 6</u></b></p>
+                <p><b> 1. Concavidade:</b> a = 1 > 0 ¬> para cima;</p>
+                <p><b> 2. Raízes: </b> 6 e 1; </p>
+                <p><b> 3. Corte no eixo y: </b>(0, 6);</p>
+                <p><b> 4. Vértice: </b> (3,5, -6,25)</p>
+                <img src="imagens/construcaografico.png">
+                <br />
+                <p></p>
+                <h3><b> As diferentes formas da função quadrática </b></h3>
+                <p> A função de segundo grau pode ser escrita e elaborada de 3 maneiras, são elas: </p>
+                <p class="espaco">– forma geral: ax² + bx + c = 0 </p>
+                <p> tem o ponto (0, c) como intersecção da parábola. </p>
+                <p class="espaco"> – forma canônica: a (x – xv)² + y = 0 </p>
+                <p> mostra os vértices da parábola. </p>
+                <p class="espaco"> – forma fatorada: a (x-x1)(x-x2)=0 </p>
+                <p> mostra as raízes na forma de x1 e x2. </p>
+
+                <h4 class="espaco"><b> ¬> transformações: <¬ </b>
+                </h4>
+                <p> Forma canônica | Forma fatorada ¬> forma geral </p>
+
+                <p> ---- resolva as contas para expandir algebricamente </p>
+                <br />
+                <p> Forma geral | ¬> forma canônica </p>
+                <p> ---- encontrar o vértice e os posicionar conforme o modelo genérico.</p>
+
+                <br />
+                <p> Forma geral | ¬> forma fatorada </p>
+                <p> ---- encontrar as raízes e as posicionar conforme o modelo genérico.</p>
 
                 <center>
                     <button style="font-size:24px">
-                        <a href="apresentacao.html">
+                        <a href="conteudos.html">
                             Anterior
                         </a>
                         <i class="material-icons">keyboard_return</i>
@@ -115,3 +274,6 @@
             </div>
         </div>
     </center>
+    </center>
+    </body>
+</html>
